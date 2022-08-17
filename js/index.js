@@ -95,7 +95,7 @@ switch (day){
 
 
 
-
+//primer entrega de js
 
     let ingreso = parseInt(prompt("Ingresar número"));
   
