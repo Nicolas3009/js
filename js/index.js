@@ -1,115 +1,46 @@
-//let ingresoNombre = prompt("Ingrrse su nombre");
-//let salida = ingresoNombre  + " " + "ingresado"
-//alert (salida)
 
+let precioCuchillo = 600
+let precioTabla = 400
+let precioVaso = 300
+let suma1 = precioCuchillo + precioTabla
+let suma2 = precioCuchillo + precioVaso
+let suma3 = precioTabla + precioVaso
+let suma4 = precioCuchillo + precioTabla + precioVaso
 
+//function calcularPrecios(){
 
-
-//let nombreUsuario = prompt("Ingrese su nombre de usuario");
-
-//if (nombreUsuario == ""){
-//    alert("No ingresaste el nombre de usuario");}
-
-//else{
- //   alert("Nombre de usuario ingresado" + ":" + " " + nombreUsuario);}
-
-
-
-
-
-
- //let nombreIngreso = prompt ("Ingresar nombre");
- //let apellidoIngreso= prompt ("Ingresar Apellido");
-
- //if ((nombreIngreso !="") && (apellidoIngreso !="")){
-   // alert("Nombre:" + " " + nombreIngreso + " " + "Apellido:" + " " + apellidoIngreso)}
- //else{
-   // alert ("Error: Ingresar nombre y apellido")}
-
-
-
-
-
-
-// let nombreIngreso = prompt ("Ingresar nombre");
-
-//if ((nombreIngreso != " ") && (nombreIngreso == "NICO") || nombreIngreso == "nico"){
-  //  alert("Hola Nico")}
-// else{
-  //  alert ("Error: Ingresar nombre valido")}
-
-
-
-
-
-
- //let numero= parseInt(prompt("ingresar numero"));
- //for(let index= 0; index < numero; index++){
-  //if(index % 2 == 0){
-    //console.log("numero", index);}}
-
-
-
-
-
-
-   //let numero= parseInt(prompt("ingresar numero"))
-   //if (numero % 10 ==0){
-    //console.log("es valido");
-   //} else{
-  //console.log("no es valido");}
-
-
-
-
-
-  /*let today = new Date(); //me entrega la fecha de hoy
-let day = today.getDay(); //me entrega un numero indicando el dia, siendo el lunes el #1
-switch (day){
-  case 1:
-    console.log("es lunes");
+alert ("Hola, ingrese el número del producto que desea comprar. Nuestros productos son: Cuchillo = 1, Tabla = 2, Vaso = 3")
+let seleccion = prompt("ingrese el número del producto seleccionado")
+switch (seleccion) {
+  case "1":
+    alert ("El precio del Cuchillo es de:" + " " + precioCuchillo + "pesos")
     break; 
-    case 2:
-    console.log("es martes");
+    case "2":
+    alert ("El precio de la Tabla es de:" + " " + precioTabla + "pesos")
     break;
-    case 3:
-    console.log("es miercoles");
-    break;
-    case 4:
-    console.log("es jueves");
-    break;
-    case 5:
-    console.log("es viernes");
-    break;
-    case 6:
-    console.log("es sabado");
-    break;
-    case 7:
-    console.log("es domingo");
-    break;
-    default:
-      alert ("que dia es?")
+    case "3":
+      alert ("El precio del Vaso es de:" + " " + precioVaso + "pesos")
       break;
-    }*/
-
-
-
-
-//primer entrega de js
-
-    let ingreso = parseInt(prompt("Ingresar número"));
+      case "1 y 2":
+        alert ("El precio total es de:" + " " + precioCuchillo + " " + "+" + " " + precioTabla + " " + "=" + " " + suma1 + " "+ "pesos");
+        break;
+        case  (("1 y 3") || ("3 y 1")):
+          alert ("El precio total es de:" + " " + precioCuchillo + " " + "+" + " " + precioVaso + " " + "=" + " " + suma2 + " "+ "pesos" );
+          break;
+          case  "2 y 3":
+            alert ("El precio total es de:" + " " + precioTabla + " " + "+" + " " + precioVaso + " " + "=" + " " + suma3 + " "+ "pesos" );
+            break; 
+             case (("1 2 y 3") || ("3 2 y 1") || ("2 3 y 1") || ("2 1 y 3") || ("1 3 y 2") || ("3 1 y 2")):
+            alert ("El precio total es de:" + " " + precioCuchillo + " " + "+" + " " + precioTabla + " " + "+" + " " + precioVaso + " " + "=" + " " + suma4 + " " + "pesos" );
+            break; 
+  default:
+  alert ("Hola, vuevla a cargar la página y seleccione un producto" )
+    break;
   
-  for (let index = 1; index <= 10; index++) {
-    if((ingreso !==" ") && (ingreso <= 100)) {
-      let resultado = ingreso + index;
-      alert (ingreso + " " + "+" + " " +index + " " +"="+ " " + resultado)
-    } else{
-      alert("vuelva a cargar la página e ingrese un nuevo número" )
-      break;
-      
-    }
     
-  }
+}
+//}
+
 
 
 
