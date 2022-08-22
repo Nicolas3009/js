@@ -97,7 +97,7 @@ switch (day){
 
 //primer entrega de js
 
-   /* let ingreso = parseInt(prompt("Ingresar número"));
+/*   let ingreso = parseInt(prompt("Ingresar número"));
   
   for (let index = 1; index <= 10; index++) {
     if((ingreso !==" ") && (ingreso <= 100)) {

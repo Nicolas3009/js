@@ -1,4 +1,21 @@
+//primer entrega de js
 
+let ingreso = parseInt(prompt("Ingresar número"));
+  
+for (let index = 1; index <= 10; index++) {
+  if((ingreso !==" ") && (ingreso <= 100)) {
+    let resultado = ingreso + index;
+    alert (ingreso + " " + "+" + " " +index + " " +"="+ " " + resultado)
+  } else{
+    alert("vuelva a cargar la página e ingrese un nuevo número" )
+    break;
+    
+  }
+  
+}
+
+
+/*
 let precioCuchillo = 600
 let precioTabla = 400
 let precioVaso = 300
@@ -39,7 +56,7 @@ switch (seleccion) {
   
     
 }
-//}
+//}*/
 
 
 
