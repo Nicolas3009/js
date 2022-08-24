@@ -1,6 +1,6 @@
 //primer entrega de js
 
-let ingreso = parseInt(prompt("Ingresar número"));
+/*let ingreso = parseInt(prompt("Ingresar número"));
   
 for (let index = 1; index <= 10; index++) {
   if((ingreso !==" ") && (ingreso <= 100)) {
@@ -12,10 +12,10 @@ for (let index = 1; index <= 10; index++) {
     
   }
   
-}
+}*/  
 
+//segunda entrega
 
-/*
 let precioCuchillo = 600
 let precioTabla = 400
 let precioVaso = 300
@@ -26,7 +26,7 @@ let suma4 = precioCuchillo + precioTabla + precioVaso
 
 //function calcularPrecios(){
 
-alert ("Hola, ingrese el número del producto que desea comprar. Nuestros productos son: Cuchillo = 1, Tabla = 2, Vaso = 3")
+alert ("Hola, ingrese el número del producto/s que desea comprar. Nuestros productos son: Cuchillo = 1, Tabla = 2, Vaso = 3")
 let seleccion = prompt("ingrese el número del producto seleccionado")
 switch (seleccion) {
   case "1":
