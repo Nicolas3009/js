@@ -1,3 +1,116 @@
+
+class jugador {
+  constructor(id, nombre, dinero) {
+    this.id = id;
+    this.nombre = nombre;
+    this.dinero = dinero;
+  }
+  actualizarDinero(apuesta) {
+    this.dinero += apuesta;
+  }
+}
+
+
+const cantidadJugadores = parseInt(prompt("Ingrese número de jugadores"));
+const apuestaMinima = parseInt(prompt("Ingrese apuesta minima"));
+
+let pozo = 0;
+
+const jugadores = [];
+
+for (let index = 1; index <= cantidadJugadores; index++) {
+  const dinero = parseInt(prompt("Ingrese el dinero del jugador" + index));
+  const nombre = prompt("Ingrese nombre del jugador" + index);
+  const jugador = new jugador(index, dinero, nombre);
+  jugadores.push(jugador);
+}
+
+
+pozo = pozo + apuestaMinima * cantidadJugadores;
+let dineros = []
+do {
+  dineros = jugadores.map(jugador => {
+    if (pozo <= 0){
+      return 0;
+    }
+    
+    alert("Turno del jugador" + jugador.nombre);
+    const primerlanzamiento = lanzarDado();
+    alert ("Primer lanzamiento" + primerlanzamiento);
+    switch (primerlanzamiento) {
+      case 1:
+        pozo += apuestaMinima;
+        jugador.actualizarDinero(-apuestaMinima);
+        alert("se agrego al pozo" + apuestaMinima);
+        alert("El nuevo valor del pozzo es" + pozo);
+        break;
+      case 6:
+        pozo -= apuestaMinima;
+        jugador.actualizarDinero(apuestaMinima);
+        alert("se resto del pozo" + apuestaMinima);
+        alert("El nuevo valor del pozzo es" + pozo);
+        break;
+
+      default:
+        const segundaApuesta = parseInt(prompt("Ingrese segunda apuesta"));
+        const condision = prompt("ingrse 1 si quiere indicar mayor o 2 si quiere indicar menor");
+        const segundoLanzamiento = lanzarDado();
+        alert ("Segundo lanzamiento" + segundoLanzamiento);
+        if (condision == 1 && segundoLanzamiento > primerlanzamiento) {
+          pozo -= segundaApuesta;
+          jugador.actualizarDinero(segundaApuesta);
+          alert("se resto del pozo" + segundaApuesta);
+          alert("El nuevo valor del pozo es" + pozo);
+        }
+        else if (condision == 1 && segundoLanzamiento <= primerlanzamiento) {
+          pozo += segundaApuesta;
+          jugador.actualizarDinero(-segundaApuesta);
+          alert("se agredo al pozo" + segundaApuesta);
+          alert("El nuevo valor del pozo es" + pozo);
+        }
+        else if (condision == 2 && segundoLanzamiento < primerlanzamiento) {
+          pozo -= segundaApuesta;
+          jugador.actualizarDinero(segundaApuesta);
+          alert("se resto del pozo" + segundaApuesta);
+          alert("El nuevo valor del pozo es" + pozo);
+        }
+        else if (condision == 2 && segundoLanzamiento >= primerlanzamiento) {
+          pozo += segundaApuesta;
+          jugador.actualizarDinero(-segundaApuesta);
+          alert("se agredo al pozo" + segundaApuesta);
+          alert("El nuevo valor del pozo es" + pozo);
+        }
+        break;
+    }
+    return jugador.dinero;
+  });
+} while (pozo > 0 && corroborarDinero(dineros));
+alert("Termino el juego");
+alert("El pozo es de" + pozo);
+alert(jugadores);
+
+function lanzarDado() {
+  return Math.floor(Math.random() * 6 + 1);
+}
+
+function corroborarDinero(dineros) {
+  let flag = true;
+  for (const dinero of dineros) {
+    if (dinero <= 0) {
+      flag = false;
+      return flag;
+    }
+
+  }
+  return flag;
+}
+
+
+
+
+
+
+
 //let ingresoNombre = prompt("Ingrrse su nombre");
 //let salida = ingresoNombre  + " " + "ingresado"
 //alert (salida)
@@ -63,34 +176,34 @@
 
 
 
-  /*let today = new Date(); //me entrega la fecha de hoy
+/*let today = new Date(); //me entrega la fecha de hoy
 let day = today.getDay(); //me entrega un numero indicando el dia, siendo el lunes el #1
 switch (day){
-  case 1:
-    console.log("es lunes");
-    break; 
-    case 2:
-    console.log("es martes");
+case 1:
+  console.log("es lunes");
+  break;
+  case 2:
+  console.log("es martes");
+  break;
+  case 3:
+  console.log("es miercoles");
+  break;
+  case 4:
+  console.log("es jueves");
+  break;
+  case 5:
+  console.log("es viernes");
+  break;
+  case 6:
+  console.log("es sabado");
+  break;
+  case 7:
+  console.log("es domingo");
+  break;
+  default:
+    alert ("que dia es?")
     break;
-    case 3:
-    console.log("es miercoles");
-    break;
-    case 4:
-    console.log("es jueves");
-    break;
-    case 5:
-    console.log("es viernes");
-    break;
-    case 6:
-    console.log("es sabado");
-    break;
-    case 7:
-    console.log("es domingo");
-    break;
-    default:
-      alert ("que dia es?")
-      break;
-    }*/
+  }*/
 
 
 
