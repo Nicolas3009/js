@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2? family=Lato:ital@0;1&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.2fr auto, 0.5fr;
+  gap: 4px 0px;
+  grid-template-areas: 
+  "header header header" 
+  "nav nav nav" 
+  "main main main" 
+  "footer footer footer";
+}
+
+/*.............header............*/
+.header {
+  height: 250px;
+  background-image: url("../imagenes/imagen-general.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: header;
+}
+.header img {
+  height: 150px;
+}
+
+/*.............nav...........*/
+.nav {
+  background-color: rgb(0, 255, 255);
+  grid-area: nav;
+}
+.nav div button {
+  background-color: rgba(255, 255, 255, 0.699);
+}
+.nav div div ul li a {
+  margin: 15px 0 15px 0;
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: LightCoral;
+  padding: 4px;
+  transition: all 1s;
+}
+.nav div div ul li a:hover {
+  border-left: 8px solid LightCoral;
+  background-color: aliceblue;
+}
+
+/*............main...........*/
+.main {
+  background-color: LightCoral;
+  grid-area: main;
+}
+
+/*.............hero............*/
+.hero {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+.hero h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.hero p {
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 10px 0 10px;
+}
+
+/*...............main.index............*/
+.sectionInicio div {
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-image: url(../imagenes/hojas\ tropicales.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sectionInicio div div p {
+  font-size: 40px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgba(118, 124, 129, 0.616);
+  width: 400px;
+}
+
+/*....................main.nosotros.....................*/
+.sectionHistoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 250, 250);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.sectionHistoria h2 {
+  font-size: 40px;
+  padding: 7px;
+  color: LightCoral;
+}
+.sectionHistoria p {
+  font-size: 18px;
+  text-align: center;
+  color: LightCoral;
+  padding: 8px;
+}
+
+.sectionLugar, .sectionPerli {
+  background-color: rgba(0, 255, 255, 0.863);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.sectionLugar div, .sectionPerli div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  height: 490px;
+}
+.sectionLugar div img, .sectionPerli div img {
+  width: 400px;
+  height: 450px;
+  margin-top: 30px;
+}
+.sectionLugar div div p, .sectionPerli div div p {
+  background-color: LightCoral;
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+  border: solid rgb(255, 250, 250);
+}
+
+.sectionPerli div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 10px;
+  height: 490px;
+}
+.sectionPerli div img {
+  width: 400px;
+  height: 450px;
+  margin-bottom: 20px;
+}
+.sectionPerli div div p {
+  background-color: aliceblue;
+  margin: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: lightcoral;
+  border: solid lightcoral;
+}
+
+/*................main.servicios...............*/
+/*mixin*/
+.sectioneFeriantes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
+  height: 200vh;
+  margin: 20px;
+}
+.sectioneFeriantes h2 {
+  font-size: 50px;
+  padding: 10px;
+  color: LightCoral;
+  text-align: center;
+}
+.sectioneFeriantes p {
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.sectioneVisitantes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.24), rgba(0, 0, 0, 0.26));
+  height: 100vh;
+  margin: 20px;
+}
+.sectioneVisitantes h2 {
+  font-size: 50px;
+  padding: 10px;
+  color: LightCoral;
+  text-align: center;
+}
+.sectioneVisitantes p {
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+/*...............main.emprendedores...............*/
+.sectioneComentarios {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.486);
+  margin: 0 10px 0 10px;
+}
+.sectioneComentarios div {
+  margin: 20px;
+}
+.sectioneComentarios div div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sectioneComentarios div div p {
+  background-color: white;
+  font-size: 20px;
+  padding: 8px;
+  color: lightcoral;
+}
+.sectioneComentarios div p {
+  font-size: 30px;
+  color: aliceblue;
+  background-color: LightCoral;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.sectioneEmprendedores {
+  background-color: rgba(255, 255, 255, 0.486);
+  margin: 0 10px 0 10px;
+}
+.sectioneEmprendedores div div div div div a {
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, rgb(255, 0, 43), #d6037e 85%, rgb(147, 6, 190));
+}
+
+/*...............main.contactos.................*/
+.sectioneContactos {
+  height: 100vh;
+  padding: 15px;
+}
+.sectioneContactos div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.486);
+  background-position: 50% 50%;
+}
+.sectioneContactos div a img {
+  transition: 1s;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
+}
+.sectioneContactos div a img:hover {
+  width: 200px;
+}
+.sectioneContactos div div {
+  width: 350px;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.8);
+  margin: 20px;
+}
+.sectioneContactos div div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(1, 99, 1);
+  margin: 4px;
+}
+.sectioneContactos div div form textarea {
+  color: black;
+  padding: 4px;
+}
+.sectioneContactos div div form input {
+  color: LightCoral;
+  margin: 4px;
+  width: 120px;
+  height: 25px;
+  background-color: aliceblue;
+  font-size: 15px;
+  transition: all 1s;
+}
+.sectioneContactos div div form input:hover {
+  background-color: LightCoral;
+  color: aliceblue;
+}
+
+/*..............main.galeria...............*/
+.sectioneGaleria div {
+  background-color: rgba(255, 228, 196, 0.493);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+.sectioneGaleria div img {
+  width: 300px;
+  margin: 8px;
+  transition: all 1s;
+}
+.sectioneGaleria div img:hover {
+  width: 370px;
+  background-color: LightCoral;
+  padding: 8px;
+}
+
+.footer {
+  background-color: black;
+  padding: 10px;
+  grid-area: footer;
+}
+.footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer div a {
+  text-decoration: none;
+  color: aliceblue;
+  margin-left: 20px;
+  padding: 10px;
+}
+.footer div a img {
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+}
+.footer div a img:hover {
+  width: 50px;
+  height: 50px;
+}
+
+/*............media.queries.nav........*/
+@media screen and (max-width: 991px) {
+  .nav div div ul li {
+    margin-top: 15px;
+  }
+  .nav div div ul li a {
+    padding: 7px;
+  }
+}
+/*...............media.queries.index............*/
+@media screen and (max-width: 992px) {
+  .sectionInicio div {
+    flex-direction: column;
+  }
+  .sectionInicio div img {
+    width: 230px;
+  }
+  .sectionInicio div div p {
+    align-items: center;
+    margin: 0 0 15% 0;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .sectionInicio div img {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .sectionInicio div div p {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 459px) {
+  .sectionInicio div div p {
+    font-size: 25px;
+  }
+  .sectionInicio div div p {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .sectionInicio div div p {
+    width: 280px;
+  }
+}
+/*...............media.queries.nosotros............*/
+@media screen and (max-width: 1015px) {
+  .sectionLugar, .sectionPerli {
+    height: 200vh;
+  }
+  .sectionLugar div, .sectionPerli div {
+    flex-direction: column;
+  }
+  .sectionPerli {
+    height: 150vh;
+  }
+  .sectionPerli div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 769px) {
+  .sectionLugar, .sectionPerli {
+    height: 230vh;
+  }
+}
+@media screen and (max-width: 530px) {
+  .sectionLugar div img, .sectionPerli div img {
+    width: 350px;
+    height: 400px;
+  }
+  .sectionPerli div img {
+    width: 350px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 474px) {
+  .sectionLugar div img, .sectionPerli div img {
+    width: 300px;
+    height: 350px;
+  }
+  .sectionPerli div img {
+    width: 300px;
+    height: 350px;
+  }
+  .sectionHistoria h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .sectionHistoria {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sectionLugar div img, .sectionPerli div img {
+    width: 250px;
+    height: 300px;
+  }
+  .sectionPerli div img {
+    width: 250px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .sectionLugar div div p, .sectionPerli div div p {
+    font-size: 25px;
+  }
+  .sectionPerli div div p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .sectionLugar div img, .sectionPerli div img {
+    width: 200px;
+    height: 250px;
+  }
+  .sectionPerli div img {
+    width: 200px;
+    height: 250px;
+  }
+  .sectionHistoria h2 {
+    font-size: 30px;
+  }
+}
+/*...............media.queries.servicios............*/
+@media screen and (max-width: 1120px) {
+  .sectioneFeriantes {
+    height: 250vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sectioneFeriantes {
+    height: 400vh;
+  }
+  .sectioneVisitantes {
+    height: 160vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectioneFeriantes h3 {
+    font-size: 35px;
+  }
+  .sectioneFeriantes p {
+    font-size: 25px;
+  }
+  .sectioneVisitantes h3 {
+    font-size: 35px;
+  }
+  .sectioneVisitantes p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 439px) {
+  .sectioneFeriantes {
+    height: 450vh;
+  }
+}
+@media screen and (max-width: 379px) {
+  .sectioneFeriantes {
+    height: 520vh;
+  }
+  .sectioneVisitantes {
+    height: 210vh;
+  }
+}
+@media screen and (max-width: 339px) {
+  .sectioneFeriantes {
+    height: 550vh;
+  }
+}
+/*..............media.queries.emprendedores............*/
+@media screen and (max-width: 770px) {
+  .sectioneComentarios {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 321px) {
+  .sectioneComentarios div p {
+    font-size: 25px;
+  }
+  .sectioneEmprendedores div p {
+    font-size: 25px;
+  }
+}
+/*..............media.queries.contactos............*/
+@media screen and (max-width: 765px) {
+  .sectioneContactos div {
+    flex-direction: column;
+    height: 150vh;
+    margin-top: 15vh;
+  }
+  .sectioneContactos {
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 428px) {
+  .hero p {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
+/*..............media.queries.galeria.......*/
+@media screen and (max-width: 360px) {
+  .sectioneGaleria div img {
+    width: 260px;
+  }
+  .sectioneGaleria div img:hover {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

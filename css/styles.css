@@ -1,7 +1,160 @@
-.sectionCarrusel button{
-    color: rgb(255, 51, 0);
-    font-family: arial;
-    padding: 20px;
-    margin: 20px;
-   
+/*.............header............*/
+.header {
+  background-image: url("../imagenes/fondoHeader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.8);
+  grid-area: header;
 }
+.header img {
+  height: 15%;
+  width: 15%;
+  margin: 20px;
+}
+.header nav {
+  width: 100%;
+}
+.header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.header nav ul li a {
+  background-color: rgba(255, 255, 255, 0.466);
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: all 1s;
+}
+.header nav ul li a:hover {
+  color: darkgoldenrod;
+}
+
+.footer {
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.829);
+  padding: 10px;
+  grid-area: footer;
+}
+.footer div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer div div {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.footer div div img {
+  height: 100%;
+  width: 100%;
+}
+.footer div div p {
+  width: 300px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.footer div div {
+  width: 100px;
+}
+.footer div div a {
+  align-items: center;
+}
+.footer div div a img {
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+  transition: all 1s;
+}
+.footer div div a img:hover {
+  width: 60%;
+  height: 60%;
+}
+.footer div div h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.footer div div ul {
+  list-style: none;
+  color: white;
+}
+.footer div div ul li {
+  margin: 20px;
+}
+.footer div div ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+.footer div div ul li a:hover {
+  color: darkgoldenrod;
+}
+.footer div div {
+  display: flex;
+  flex-direction: column;
+}
+.footer div div h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.footer div div h4 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.footer div div a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+.footer div div a:hover {
+  color: darkgoldenrod;
+}
+.footer div div h4 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.footer div div a {
+  align-items: center;
+}
+.footer div div a p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+.footer div div a p:hover {
+  color: darkgoldenrod;
+}
+
+.sectioneProductos {
+  background-color: rgba(255, 255, 255, 0.486);
+  margin: 0 10px 0 10px;
+}
+.sectioneProductos h2 {
+  text-align: center;
+  padding: 50px;
+}
+.sectioneProductos div div div div div h2 {
+  padding: 5px;
+}
+.sectioneProductos div div div div div button {
+  background-color: #fff000;
+  background-image: linear-gradient(315deg, #fff000 0%, rgb(255, 0, 43), #d6037e 85%, rgb(147, 6, 190));
+}
+
+/*# sourceMappingURL=styles.css.map */

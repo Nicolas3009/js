@@ -1,0 +1,47 @@
+/*.............header............*/
+.header {
+    
+    background-image: url("../imagenes/fondoHeader.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 7px 13px 10px rgba(0, 0, 0, .8);
+    grid-area: header;
+
+    img {
+        height: 15%;
+        width: 15%;
+        margin: 20px;
+    }
+    nav{
+        width: 100%;
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+            justify-content: space-evenly;
+            li{
+               
+                a{
+                    background-color: rgba(255, 255, 255, 0.466);
+                    padding: 10px;
+                    font-family: "Open Sans",sans-serif;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: black;
+                    transition: all 1s;
+
+                    &:hover {
+                    
+                    color: darkgoldenrod;
+                    }
+                }    
+            }
+        }
+    }
+}
