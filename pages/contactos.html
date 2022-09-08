@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Isla | Contactos</title>
+    <link rel="stylesheet" href="../css.bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -23,56 +24,88 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <h1>holaaaaa </h1>
+        <main class="main">
+            <section class="sectionformulario">
+                <div><img src="../imagenes/enviar.png" alt=""></div>
+                <form id="login">
+                    <div>
+                        <label for="nombre"> Nombre y Apellido </label>
+                        <input type="text" placeholder="Nombre y Apellido" name="nombre" />
+                    </div>
+                    <div class="piezasDelFormulario">
+                        <label for="gmail"> Gmail </label>
+                        <input type="text" placeholder="Gamil" name="gamil" />
+                    </div>
+                    <div class="piezasDelFormulario">
+                        <label for="consulta"> Consulta </label>
+                        <input type="text" placeholder="Consultar" name="consulta" />
+                    </div>
+                    <div class="piezasDelFormulario">
+                        <button type="submit" click="consultar(event)">enviar</button>
+                    </div>
+                </form>
+            </section>
+
+
         </main>
         <footer class="footer">
+
+
             <div>
-                <div>
-                    <img src="../imagenes/logo.png" alt="logo de la empresa">
-                    <p>
-                        A esto nos dedicamos nosotros como familia
-                    </p>
-                </div>
-                <div>
-                    <a href=""><img src="../imagenes/instagram.png" alt="Logo instagram" width="50px"></a>
-                    <a href="">
-                        <img src="../imagenes/whatsapp.png" alt="Logo de Whatsapp" width="50px"></a>
-                    <a href=""><img src="../imagenes/map.png" alt="Logo de Maps" width="50px"></a>
-                </div>
-
-                <div>
-                    <h3>Navegador</h3>
-                    <ul>
-                        <li><a href="../index.html"> Inicio</a></li>
-                        <li><a href="../pages/productos.html"> Productos</a></li>
-                        <li><a href="../pages/regalos.html"> Regalos empresariales</a></li>
-                        <li><a href="../pages/nosotros.html"> Nosotros</a></li>
-                        <li><a href="../pages/contactos.html"> Contactos</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3>Contactos</h3>
-                    <h4>mails:</h4>
-                    <a href=""> nicolasmichelini02@gmail.com</a>
-                    <h4>Whatsapps:</h4>
-                    <a href="">
-                        <p>(+54) 3490-301923</p>
-                    </a>
-                    <a href="">
-                        <p>(+54) 3490-301923</p>
-                    </a>
-                    <a href="">
-                        <p>(+54) 3490-301923</p>
-                    </a>
-                </div>
-
-
+                <img src="../imagenes/logo.png" alt="logo de la empresa">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus facilis dolor fugiat
+                    minus. Culpa adipisci ipsam, labore aliquam aliquid atque temporibus ipsa est. Magnam eum dolorem
+                    harum nemo animi.
+                </p>
             </div>
+
+
+
+            <div>
+                <a href=""><img src="../imagenes/instagram.png" alt="Logo instagram" width="50px"></a>
+                <a href="">
+                    <img src="../imagenes/whatsapp.png" alt="Logo de Whatsapp" width="50px"></a>
+                <a href=""><img src="../imagenes/map.png" alt="Logo de Maps" width="50px"></a>
+            </div>
+
+
+
+            <div>
+                <h3>Navegador</h3>
+                <ul>
+                    <li><a href="../index.html"> Inicio</a></li>
+                    <li><a href="../pages/productos.html"> Productos</a></li>
+                    <li><a href="../pages/regalos.html"> Regalos empresariales</a></li>
+                    <li><a href="../pages/nosotros.html"> Nosotros</a></li>
+                    <li><a href="../pages/contactos.html"> Contactos</a></li>
+                </ul>
+            </div>
+
+
+
+            <div>
+                <h3>Contactos</h3>
+                <h4>mails:</h4>
+                <a href="">
+                    <p> nicolasmichelini02@gmail.com</p>
+                </a>
+                <h4>Whatsapps:</h4>
+                <a href="">
+                    <p>(+54) 3492-301923</p>
+                </a>
+                <a href="">
+                    <p>(+54) 3492-301923</p>
+                </a>
+                <a href="">
+                    <p>(+54) 3492-301923</p>
+                </a>
+            </div>
+
+
         </footer>
     </div>
-    <script src="../js/index.js"></script>
+    <script src="../contactos.js"></script>
 </body>
 
 </html>

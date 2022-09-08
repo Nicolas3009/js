@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="container">
     <header class="header">
         <img src="../imagenes/logo.png" alt="logo de la empresa">
         <nav>
@@ -23,7 +24,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="sectioneProductos ">
             <h2>Productos para el asado!</h2>
             <div class=" container-fluid ">
@@ -93,9 +94,7 @@
                         <div class="card" style="width: 20rem;">
                             <img src="../imagenes/tabla 12.jpg" class=" card-img-top " alt="Imagen de un producto">
                             <div class="card-body">
-                                <h3 class="card-title"> 
-
-                                    TABLA 12 C/PORTA CUCH / TENEDOR</h3>
+                                <h3 class="card-title"> TABLA 12 C/PORTA CUCH / TENEDOR</h3>
                                 <p class=" card-text ">DETALLES DEL PRODUCTO:
 
                                     Tabla con funda porta cuchilla en ecocuero.
@@ -225,8 +224,8 @@
                                     Excelente detalles terminación.
                                     Uso decorativo.
                                     Posee sistema de colgado.</p>
-                                <button class=" btn btn-primary ">
-                                    Agregar al carrito </button>
+                               <a href=""> <button class=" btn btn-primary ">
+                                    Agregar al carrito </button></a>
                             </div>
                         </div>
                     </div>
@@ -240,8 +239,8 @@
                                     Tabla de madera Leuka compensada.
                                     Destapador de acero atornillado a la madera.
                                     Madera grabada en láser.</p>
-                                <button class=" btn btn-primary ">
-                                    Agregar al carrito </button>
+                                <a href="../pages/carrito.html"><button type="button" class=" btn btn-primary" onclick="agregarAlCarrito"("Producto")>
+                                    Agregar al carrito </button></a>
                             </div>
                         </div>
                     </div>
@@ -253,50 +252,58 @@
         </section>
     </main>
     <footer class="footer">
+            
+            
         <div>
-            <div>
-                <img src="../imagenes/logo.png" alt="logo de la empresa">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus facilis dolor fugiat minus. Culpa adipisci ipsam, labore aliquam aliquid atque temporibus ipsa est. Magnam eum dolorem harum nemo animi.
-                </p>
-            </div>
-            <div>
-                <a href=""><img src="../imagenes/instagram.png" alt="Logo instagram" width="50px"></a>
-                <a href="">
-                    <img src="../imagenes/whatsapp.png" alt="Logo de Whatsapp" width="50px"></a>
-                <a href=""><img src="../imagenes/map.png" alt="Logo de Maps" width="50px"></a>
-            </div>
-
-            <div>
-                <h3>Navegador</h3>
-                <ul>
-                    <li><a href="../index.html"> Inicio</a></li>
-                    <li><a href="../pages/productos.html"> Productos</a></li>
-                    <li><a href="../pages/regalos.html"> Regalos empresariales</a></li>
-                    <li><a href="../pages/nosotros.html"> Nosotros</a></li>
-                    <li><a href="../pages/contactos.html"> Contactos</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Contactos</h3>
-                <h4>mails:</h4>
-                <a href=""> nicolasmichelini02@gmail.com</a>
-                <h4>Whatsapps:</h4>
-                <a href="">
-                    <p>(+54) 3490-301923</p>
-                </a>
-                <a href="">
-                    <p>(+54) 3490-301923</p>
-                </a>
-                <a href="">
-                    <p>(+54) 3490-301923</p>
-                </a>
-            </div>
-
-
+            <img src="../imagenes/logo.png" alt="logo de la empresa">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus facilis dolor fugiat minus. Culpa adipisci ipsam, labore aliquam aliquid atque temporibus ipsa est. Magnam eum dolorem harum nemo animi.
+            </p>
         </div>
-    </footer>
+
+    
+   
+    <div>
+        <a href=""><img src="../imagenes/instagram.png" alt="Logo instagram" width="50px"></a>
+        <a href="">
+            <img src="../imagenes/whatsapp.png" alt="Logo de Whatsapp" width="50px"></a>
+        <a href=""><img src="../imagenes/map.png" alt="Logo de Maps" width="50px"></a>
+    </div>
+
+
+   
+    <div>
+        <h3>Navegador</h3>
+        <ul>
+            <li><a href="../index.html"> Inicio</a></li>
+            <li><a href="../pages/productos.html"> Productos</a></li>
+            <li><a href="../pages/regalos.html"> Regalos empresariales</a></li>
+            <li><a href="../pages/nosotros.html"> Nosotros</a></li>
+            <li><a href="../pages/contactos.html"> Contactos</a></li>
+        </ul>
+    </div>
+   
+
+   
+    <div>
+        <h3>Contactos</h3>
+        <h4>mails:</h4>
+        <a href=""><p> nicolasmichelini02@gmail.com</p></a>
+        <h4>Whatsapps:</h4>
+        <a href="">
+            <p>(+54) 3492-301923</p>
+        </a>
+        <a href="">
+            <p>(+54) 3492-301923</p>
+        </a>
+        <a href="">
+            <p>(+54) 3492-301923</p>
+        </a>
+    </div>
+  
+
+</footer>
+</div>
     <script src="../js.bootstrap/bootstrap.js"></script>
     <script src="../js/index.js"></script>
 </body>
