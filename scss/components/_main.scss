@@ -39,8 +39,7 @@
             }
 
             button {
-              background-color: #fff000;
-              background-image: linear-gradient(315deg, #fff000 0%, rgb(255, 0, 43), #d6037e 85%, rgb(147, 6, 190));
+              
 
             }
           }
@@ -48,6 +47,15 @@
       }
     }
   }
+}
+.btn-primary{
+  margin: 5px;
+  color:rgba(35, 193, 204, 0.747);
+  background-color: black;
+}
+.btn-secondary{
+  color:rgba(35, 193, 204, 0.747);
+  background-color: black;
 }
 
 

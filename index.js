@@ -1,4 +1,3 @@
-
 const productos = [
     {
       nombre: "PORTA TABLITA ASADO X1 CALADO RECTANG",
@@ -72,8 +71,8 @@ const productos = [
     },
   ];
 
-  const botonNumero20 = document.getElementById("botonComprar")
-  botonNumero20.addEventListener('click',comprar)
+  //const botonNumero20 = document.getElementById("botonComprar")
+  //botonNumero20.addEventListener('click',comprar)
 
 
 
@@ -89,7 +88,7 @@ const productos = [
   botonCarrito.addEventListener('click',agregarAlCarrito);
 
   function agregarAlCarrito(_carrito){
-  let carritoDiv = document.querySelector("_carrito");
+  let carritoDiv = document.querySelector("carrito");
   let pCrear = document.createElement("p");
   carritoDiv.append(pCrear);
   pCrear.innerHTML = _carrito
@@ -97,6 +96,9 @@ const productos = [
   function actualizarCarrito(){
     pProductos.innerHTML = productos;
   }
+  agregarAlCarrito()
+  actualizarCarrito()
+  
   //.........................................................
 
 
