@@ -1,7 +1,7 @@
 //Formulario de consultas.................
 
  
-//let formulario = document.querySelector("#login");
+let formulario = document.querySelector("#login");
 
 
 function consultar(event) {

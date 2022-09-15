@@ -71,35 +71,8 @@ const productos = [
     },
   ];
 
-  //const botonNumero20 = document.getElementById("botonComprar")
-  //botonNumero20.addEventListener('click',comprar)
-
-
-
-
-
-// intentando hacer que los objetos del array se agreguen al carrito 
-
-
-  let pProductos = document.querySelector("productos");
-  pProductos.innerHTML = productos;
-
-  const botonCarrito = document.getElementById("botonCarrito");
-  botonCarrito.addEventListener('click',agregarAlCarrito);
-
-  function agregarAlCarrito(_carrito){
-  let carritoDiv = document.querySelector("carrito");
-  let pCrear = document.createElement("p");
-  carritoDiv.append(pCrear);
-  pCrear.innerHTML = _carrito
-}
-  function actualizarCarrito(){
-    pProductos.innerHTML = productos;
-  }
-  agregarAlCarrito()
-  actualizarCarrito()
-  
-  //.........................................................
+  const botonNumero20 = document.getElementById("botonComprar")
+  botonNumero20.addEventListener('click',comprar)
 
 
 
@@ -135,6 +108,46 @@ function comprar() {
     productos.push(nuevo)
     console.log('Funcion! Producto añadido');
   }
+
+
+  
+// intentando hacer que los objetos del array se agreguen al carrito 
+
+
+let pProductos = document.querySelector("productos");
+pProductos.innerHTML = productos;
+
+const botonCarrito = document.getElementById("botonCarrito");
+botonCarrito.addEventListener('click',agregarAlCarrito);
+
+function agregarAlCarrito(_carrito){
+let carritoDiv = document.querySelector("carrito");
+let pCrear = document.createElement("p");
+carritoDiv.append(pCrear);
+pCrear.innerHTML = _carrito
+}
+function actualizarCarrito(){
+  pProductos.innerHTML = productos;
+}
+agregarAlCarrito()
+actualizarCarrito()
+
+//.........................................................
+
+
+//......Desplegae Modal de los productos..........
+
+let botonDesplegarModal = document.getElementById("desplegarModal")
+
+function desplegarModal(){
+botonDesplegarModal.addEventListener("click", () => {
+  div.innerHTML
+})
+}
+
+//.................................................
+
+
 
 
 
