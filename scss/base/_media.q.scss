@@ -1,0 +1,35 @@
+/*............media.queries.header........*/
+@media screen and (max-width: 1009px) {
+    .header {
+
+
+        div {
+
+
+            span {
+                display: block;
+                cursor: pointer;
+                padding: 0.5rem 1rem;
+            }
+
+            nav {
+                width: 100%;
+                margin-top: 0.5rem;
+
+                ul {
+                    display: none;
+                    ul.show{
+                        display: block;
+                    }
+
+                    li {
+                        display: block;
+                        margin: 5px;
+
+                        a {}
+                    }
+                }
+            }
+        }
+    }
+}

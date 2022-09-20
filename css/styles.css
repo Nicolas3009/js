@@ -1,43 +1,73 @@
 /*.............header............*/
 @import url("https://fonts.googleapis.com/css2? family=Lato:ital@0;1&family=Roboto:wght@100&display=swap");
 .header {
-  background-image: url("../imagenes/fondoHeader.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 2rem 0;
+  background-color: rgb(1, 43, 46);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 7px 13px 10px rgba(0, 0, 0, 0.8);
   grid-area: header;
 }
-.header img {
-  height: 100px;
-  width: 100px;
-  margin: 30px;
-}
-.header nav {
-  width: 100%;
-}
-.header nav ul {
+.header div {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  list-style: none;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.header nav ul li a {
+.header div p {
+  font-size: 1.4em;
+  color: white;
+  margin: 20px;
+  letter-spacing: 10px;
+}
+.header div span {
+  display: none;
+  color: white;
+}
+.header div nav {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header div nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header div nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header div nav ul li a {
+  display: block;
   background-color: rgba(255, 255, 255, 0.466);
-  padding: 10px;
+  padding: 0.5rem 1rem;
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
+  border-radius: 10px;
   transition: all 1s;
 }
-.header nav ul li a:hover {
-  color: darkgoldenrod;
+.header div nav ul li a:hover {
+  color: rgba(247, 213, 129, 0.959);
+  background-color: rgba(255, 255, 255, 0.219);
+}
+.header div a img {
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+}
+.header div a img:hover {
+  width: 45px;
+  height: 45px;
 }
 
 .footer {
@@ -61,7 +91,7 @@
 }
 .footer div p {
   font-size: 100%;
-  padding: 5px;
+  padding: 5px 0;
   text-align: left;
   color: white;
   width: 200px;
@@ -265,21 +295,98 @@
     }
 }*/
 .main {
-  background-color: rgb(4, 118, 126);
+  background-color: rgb(6, 125, 134);
+  padding-top: 15rem;
   grid-area: main;
+}
+
+.hero h1 {
+  text-align: center;
+  padding: 50px;
+  color: black;
+}
+.hero hr {
+  margin: 50px 120px 50px 120px;
+  color: black;
 }
 
 .carrusel {
   margin: 20px;
 }
-.carrusel div div div img {
-  height: 400px;
-}
 .carrusel div div div h5 {
+  color: white;
+}
+
+hr {
+  margin: 50px 120px 50px 120px;
   color: black;
 }
-.carrusel div div div p {
+
+.sectioneTexto {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.445);
+  width: 80% px;
+}
+.sectioneTexto p {
+  font-size: 40px;
+  color: white;
+}
+
+.sectioneDestacados {
+  background-color: rgb(1, 43, 46);
+}
+.sectioneDestacados h2 {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.sectionInstagram h3 {
+  text-align: center;
+  padding: 50px;
   color: black;
+}
+.sectionInstagram div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+.sectionInstagram div img {
+  width: 30%;
+  height: 30%;
+  margin: 8px;
+  transition: all 1s;
+}
+.sectionInstagram div img:hover {
+  background-color: rgb(1, 43, 46);
+  padding: 1%;
+}
+.sectionInstagram div {
+  align-items: center;
+}
+.sectionInstagram div button {
+  border-radius: 10px;
+  color: rgba(35, 193, 204, 0.747);
+  background-color: rgb(1, 43, 46);
+  text-align: center;
+  padding: 8px;
+  transition: all 1s;
+}
+.sectionInstagram div button:hover {
+  color: rgb(1, 43, 46);
+  background-color: rgba(35, 193, 204, 0.747);
+}
+.sectionInstagram div button img {
+  width: 20px;
+  height: 20px;
+}
+.sectionInstagram div button a {
+  text-decoration: none;
 }
 
 .sectionBoton button {
@@ -395,14 +502,27 @@
   grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
-.hero h1 {
-  text-align: center;
-  padding: 50px;
-  color: black;
-}
-.hero hr {
-  margin: 50px 120px 50px 120px;
-  color: black;
+/*............media.queries.header........*/
+@media screen and (max-width: 1009px) {
+  .header div span {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+  .header div nav {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .header div nav ul {
+    display: none;
+  }
+  .header div nav ul ul.show {
+    display: block;
+  }
+  .header div nav ul li {
+    display: block;
+    margin: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
