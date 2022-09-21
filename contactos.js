@@ -2,10 +2,11 @@
 
  
 let formulario = document.querySelector("#login");
-
+const botonFormulario = document.getElementById('formulario')
+botonFormulario.addEventListener("click",consultar)
 
 function consultar(event) {
-  //event.preventDefault();
+  event.preventDefault();
   console.log(event);
   let formulario = document.querySelector ("#login");
   console.log(formulario);
@@ -18,8 +19,6 @@ function consultar(event) {
   const token = generateToken(valueNombre, valueGmail, valueConsulta);
   localStorage.setItem("token", token);
 }
-
-consultar()
 
 function generateToken(nombre, gmail, consulta){
 return nombre + gmail + consulta
