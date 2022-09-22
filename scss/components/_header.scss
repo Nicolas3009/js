@@ -1,9 +1,5 @@
 /*.............header............*/
 .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
     padding: 2rem 0;
     background-color: rgb(1, 43, 46);
     display: flex;
@@ -20,23 +16,32 @@
         p{
             font-size: 1.4em;
             color: white;
-            margin: 20px;
+            margin-left: 50px;
             letter-spacing: 10px;
         }
-
-        span {
-            display: none;
-            color: white;
+        div {
+           
+            a {
+                img {
+                    margin-right: 70px;
+                    width: 40px;
+                    height: 40px;
+                    transition: all 1s;
+    
+                    &:hover {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
         }
+    
 
         nav {
-            margin: 20px;
+            margin: 3px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-          
-            
-
             ul {
                 margin: 0;
                 padding: 0;
@@ -44,7 +49,7 @@
 
                 li {
                     display: inline-block;
-                    margin-left: 30px;
+                    margin-left: 10px;
 
                     a {
                         display: block;
@@ -68,18 +73,4 @@
         }
     }
 
-    div {
-        a {
-            img {
-                width: 40px;
-                height: 40px;
-                transition: all 1s;
-
-                &:hover {
-                    width: 45px;
-                    height: 45px;
-                }
-            }
-        }
-    }
 }

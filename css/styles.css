@@ -1,10 +1,6 @@
 /*.............header............*/
 @import url("https://fonts.googleapis.com/css2? family=Lato:ital@0;1&family=Roboto:wght@100&display=swap");
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
   padding: 2rem 0;
   background-color: rgb(1, 43, 46);
   display: flex;
@@ -22,15 +18,21 @@
 .header div p {
   font-size: 1.4em;
   color: white;
-  margin: 20px;
+  margin-left: 50px;
   letter-spacing: 10px;
 }
-.header div span {
-  display: none;
-  color: white;
+.header div div a img {
+  margin-right: 70px;
+  width: 40px;
+  height: 40px;
+  transition: all 1s;
+}
+.header div div a img:hover {
+  width: 45px;
+  height: 45px;
 }
 .header div nav {
-  margin: 20px;
+  margin: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +44,7 @@
 }
 .header div nav ul li {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 .header div nav ul li a {
   display: block;
@@ -59,15 +61,6 @@
 .header div nav ul li a:hover {
   color: rgba(247, 213, 129, 0.959);
   background-color: rgba(255, 255, 255, 0.219);
-}
-.header div a img {
-  width: 40px;
-  height: 40px;
-  transition: all 1s;
-}
-.header div a img:hover {
-  width: 45px;
-  height: 45px;
 }
 
 .footer {
@@ -296,7 +289,7 @@
 }*/
 .main {
   background-color: rgb(6, 125, 134);
-  padding-top: 15rem;
+  padding-top: 5rem;
   grid-area: main;
 }
 
@@ -504,24 +497,9 @@ hr {
 
 /*............media.queries.header........*/
 @media screen and (max-width: 1009px) {
-  .header div span {
-    display: block;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-  }
   .header div nav {
     width: 100%;
     margin-top: 0.5rem;
-  }
-  .header div nav ul {
-    display: none;
-  }
-  .header div nav ul ul.show {
-    display: block;
-  }
-  .header div nav ul li {
-    display: block;
-    margin: 5px;
   }
 }
 

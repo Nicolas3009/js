@@ -19,7 +19,6 @@ const botonAgregarCarrito = document.getElementById('botonCarrito');
 botonAgregarCarrito.addEventListener("click", agregarTablaAsado);
 
 
-
 const productos = [
   {
     nombre: "PORTA TABLITA ASADO X1 CALADO RECTANG",
