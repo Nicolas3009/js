@@ -50,8 +50,8 @@ hr {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.445);
   width: 80%px;
-  
-  p{
+
+  p {
     font-size: 40px;
     color: white;
   }
@@ -186,6 +186,80 @@ hr {
 .btn-secondary {
   color: rgba(35, 193, 204, 0.747);
   background-color: black;
+}
+
+.carrito {
+ 
+
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    div {
+      p {
+        color: white;
+      }
+    }
+
+    div {
+      p {
+        color: white;
+      }
+    }
+
+    div {
+      p {
+        color: white;
+      }
+    }
+  }
+
+  div {
+    
+    div {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px;
+
+      div {
+        align-items: center;
+        
+        img {
+          width: 80px;
+          height: 80px;
+        }
+
+      }
+
+    
+
+      div {
+        button {
+          width: 20px;
+          height: 20px;
+        }
+
+        p {
+          color: white;
+          font-size: 25px;
+        }
+      }
+
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+
+    p {
+      color: white;
+      font-size: 25px;
+    }
+
+  }
 }
 
 //.........regalos empresariales ..............

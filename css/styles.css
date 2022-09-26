@@ -21,8 +21,14 @@
   margin-left: 50px;
   letter-spacing: 10px;
 }
-.header div div a img {
+.header div div {
   margin-right: 70px;
+}
+.header div div a {
+  margin-right: 0;
+}
+.header div div a img {
+  margin-right: 0;
   width: 40px;
   height: 40px;
   transition: all 1s;
@@ -30,6 +36,9 @@
 .header div div a img:hover {
   width: 45px;
   height: 45px;
+}
+.header div div p {
+  margin-left: 0;
 }
 .header div nav {
   margin: 3px;
@@ -160,133 +169,6 @@
   color: darkgoldenrod;
 }
 
-/*div {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        div {
-            display: flex;
-            flex-direction: column;
-
-            img {
-                height: 20%;
-                width: 20%
-            }
-
-            p {
-                width: 300px;
-                color: white;
-                font-family: "Open Sans", sans-serif;
-            }
-        }
-
-        div {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                align-items: center;
-
-                img {
-                    width: 10%;
-                    height: 10%;
-                    margin: 10px;
-                    transition: all 1s;
-
-                    &:hover {
-                        width: 15%;
-                        height: 15%;
-                    }
-
-                }
-            }
-        }
-
-
-
-        div {
-            display: flex;
-            flex-direction: column;
-
-            h3 {
-                color: white;
-                font-family: "Open Sans", sans-serif;
-            }
-
-            ul {
-                list-style: none;
-                color: white;
-
-                li {
-                    margin: 20px;
-
-                    a {
-                        font-family: "Open Sans", sans-serif;
-                        font-size: 15px;
-                        text-decoration: none;
-                        color: white;
-                        transition: all 1s;
-
-                        &:hover {
-                            color: darkgoldenrod;
-                        }
-                    }
-                }
-            }
-        }
-
-        div {
-            display: flex;
-            flex-direction: column;
-
-            h3 {
-                color: white;
-                font-family: "Open Sans", sans-serif;
-            }
-
-            h4 {
-                color: white;
-                font-family: "Open Sans", sans-serif;
-            }
-
-            a {
-                font-family: "Open Sans", sans-serif;
-                font-size: 15px;
-                text-decoration: none;
-                color: white;
-                transition: all 1s;
-
-                &:hover {
-                    color: darkgoldenrod;
-                }
-            }
-
-            h4 {
-                color: white;
-                font-family: "Open Sans", sans-serif;
-            }
-
-            a {
-                align-items: center;
-
-                p {
-                    font-family: "Open Sans", sans-serif;
-                    font-size: 15px;
-                    text-decoration: none;
-                    color: white;
-                    transition: all 1s;
-
-                    &:hover {
-                        color: darkgoldenrod;
-                    }
-                }
-
-            }
-        }
-
-    }
-}*/
 .main {
   background-color: rgb(6, 125, 134);
   padding-top: 5rem;
@@ -421,6 +303,50 @@ hr {
 .btn-secondary {
   color: rgba(35, 193, 204, 0.747);
   background-color: black;
+}
+
+.carrito div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.carrito div div p {
+  color: white;
+}
+.carrito div div p {
+  color: white;
+}
+.carrito div div p {
+  color: white;
+}
+.carrito div div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.carrito div div div {
+  align-items: center;
+}
+.carrito div div div img {
+  width: 80px;
+  height: 80px;
+}
+.carrito div div div button {
+  width: 20px;
+  height: 20px;
+}
+.carrito div div div p {
+  color: white;
+  font-size: 25px;
+}
+.carrito div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.carrito div p {
+  color: white;
+  font-size: 25px;
 }
 
 .recordatorio div {
