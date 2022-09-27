@@ -16,7 +16,13 @@ function clickYAñadir(event) {
   const titulo = item.querySelector('.card-title').textContent;
   const precio = item.querySelector('.card-precio').textContent;
   const imagen = item.querySelector('.card-img-top').src;
- 
+
+
+  //...Notificacion de que el producto se agrego correctamente........
+  Toastify({
+    text: ` El producto se agrego al carrito`,
+    duration: 3000,
+  }).showToast();
 
   agregarElProductoAlCarrito(titulo, precio, imagen);
 }
@@ -35,41 +41,66 @@ function agregarElProductoAlCarrito(titulo, precio, imagen) {
   </div>
   <div>
 
-    <button>+</button>
-    <p>0</p>
-    <button>-</button>
+    <button class="modificarCantidad">+</button>
+    <p id="1" class="cantidadDeLosProductos">1</p>
+    <button class="modificarCantidad">-</button>
   </div>
   <div>
-
-    <button>X</button>
+    <button class="eliminarProducto">X</button>
   </div>
 </div>`;
 filaDelCarrito.innerHTML = carrito;
 divContenedor.append(filaDelCarrito);
 
-actulizarPrecioTotal()
+filaDelCarrito
+.querySelector('.eliminarProducto')
+.addEventListener("click", borarItemDelCarrito);
+
+filaDelCarrito
+.querySelector('.modificarCantidad')
+.addEventListener("click", aumentarLaCantidadDeLosElementos);
+
+actulizarPrecioTotal();
 }
 
-
+//...Actualiza el precio total..........
 function actulizarPrecioTotal(){
   let total = 0;
   const totalDelCarrito = document.querySelector('.total');
   const divDeProductos = document.querySelectorAll('.divDeProductos')
+ 
+ //...Opero con los elementos que obtuve arriba a ravez de un forEach.......
   divDeProductos.forEach(divDeProductos => {
     //elemento completo
 const precio = divDeProductos.querySelector('.precio')
-//obtenemos solo el precio, sin el signo $ y deja de ser un string
+//obtengo solo el precio, sin el signo $ y deja de ser un string (por la propiedad Number)
  const precioSolo = Number( precio.textContent.replace('$', ''));
- divDeProductos.querySelector('.')
+//...obtengo la cantidad de un producto......
+ const cantidadDeLosProductos = divDeProductos.querySelector('.cantidadDeLosProductos')
+ const valorExactoDeLosProductos = Number(cantidadDeLosProductos.id);
+
+total = total + precioSolo * valorExactoDeLosProductos;
 });
+
+totalDelCarrito.innerHTML = `$${total}`
 }
 
+function borarItemDelCarrito(event){
+  const botonX = event.target;
+  botonX.closest('.divDeProductos').remove();
+  actulizarPrecioTotal();
+}
+
+let contador = 1;
 
 
-
-
-
-
+function aumentarLaCantidadDeLosElementos(event){
+  const modificar = event.target;
+  contador += 1;
+  let pContador = document.querySelector(".cantidadDeLosProductos")
+  pContador.innerHTML = contador;
+  console.log(modificar);
+}
 
 
 
