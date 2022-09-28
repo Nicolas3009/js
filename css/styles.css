@@ -306,8 +306,6 @@ hr {
 }
 
 .carrito div {
-  display: flex;
-  justify-content: space-evenly;
   padding: 20px;
 }
 .carrito div div p {
@@ -319,25 +317,30 @@ hr {
 .carrito div div p {
   color: white;
 }
-.carrito div div {
+.carrito .divContenedor {
+  display: block;
+  width: 100%;
+}
+.carrito .divContenedor div {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+  width: 100%;
 }
-.carrito div div div {
+.carrito .divContenedor div div {
   align-items: center;
 }
-.carrito div div div img {
+.carrito .divContenedor div div img {
   width: 80px;
   height: 80px;
 }
-.carrito div div div button {
-  width: 20px;
-  height: 20px;
-}
-.carrito div div div p {
+.carrito .divContenedor div p {
   color: white;
   font-size: 25px;
+}
+.carrito .divContenedor div button {
+  width: 40px;
+  height: 40px;
 }
 .carrito div {
   display: flex;

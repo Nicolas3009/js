@@ -6,6 +6,8 @@ botonCarrito.forEach((botonAñadirAlCarrito) => {
   botonAñadirAlCarrito.addEventListener('click', clickYAñadir);
 });
 
+const botonComprar = document.querySelector('.botonComprar')
+botonComprar.addEventListener("click", clickYComprar);
 
 const divContenedor = document.querySelector('.divContenedor');
 
@@ -33,7 +35,7 @@ function agregarElProductoAlCarrito(titulo, precio, imagen) {
   <div class="divDeProductos">
   <div>
     <img src=${imagen} alt="">
-    <p >${titulo}</p>
+    <h6>${titulo}</h6>
   </div>
   <div >
 
@@ -41,9 +43,9 @@ function agregarElProductoAlCarrito(titulo, precio, imagen) {
   </div>
   <div>
 
-    <button class="modificarCantidad">+</button>
-    <p id="1" class="cantidadDeLosProductos">1</p>
-    <button class="modificarCantidad">-</button>
+    <button id="1" class=" cantidadDeLosProductos">+</button>
+    
+   
   </div>
   <div>
     <button class="eliminarProducto">X</button>
@@ -57,7 +59,7 @@ filaDelCarrito
 .addEventListener("click", borarItemDelCarrito);
 
 filaDelCarrito
-.querySelector('.modificarCantidad')
+.querySelector('.cantidadDeLosProductos')
 .addEventListener("click", aumentarLaCantidadDeLosElementos);
 
 actulizarPrecioTotal();
@@ -82,7 +84,7 @@ const precio = divDeProductos.querySelector('.precio')
 total = total + precioSolo * valorExactoDeLosProductos;
 });
 
-totalDelCarrito.innerHTML = `$${total}`
+totalDelCarrito.innerHTML = `TOTAL: $${total}`
 }
 
 function borarItemDelCarrito(event){
@@ -91,23 +93,32 @@ function borarItemDelCarrito(event){
   actulizarPrecioTotal();
 }
 
+//...funcion para incrementar el producto desde el carrito con un contador
 let contador = 1;
-
-
 function aumentarLaCantidadDeLosElementos(event){
   const modificar = event.target;
+ if(modificar.value <= 0 ){
+  modificar.value = 1;}
+  actulizarPrecioTotal();
   contador += 1;
   let pContador = document.querySelector(".cantidadDeLosProductos")
   pContador.innerHTML = contador;
-  console.log(modificar);
+
+console.log(modificar);
 }
 
 
 
-
-
-
-
+//...funcion para baciar el carrito y relizar la compra 
+function clickYComprar(){
+  divContenedor.innerHTML = " ";
+  actulizarPrecioTotal();
+  Toastify({
+    text: "Gracias por su compra!",
+    duration: 3000
+    }).showToast();
+  
+}
 
 
 

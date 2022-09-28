@@ -189,11 +189,10 @@ hr {
 }
 
 .carrito {
- 
+
 
   div {
-    display: flex;
-    justify-content: space-evenly;
+   
     padding: 20px;
 
     div {
@@ -215,13 +214,14 @@ hr {
     }
   }
 
-  div {
-    
+  .divContenedor{
+    display: block;
+    width: 100%;
     div {
       display: flex;
       justify-content: space-evenly;
       padding: 20px;
-
+width: 100%;
       div {
         align-items: center;
         
@@ -232,21 +232,23 @@ hr {
 
       }
 
-    
+    }
 
       div {
-        button {
-          width: 20px;
-          height: 20px;
-        }
 
         p {
           color: white;
           font-size: 25px;
         }
       }
+      div{
+        button{
+          width: 40px;
+          height: 40px;
+        }
+      }
 
-    }
+    
   }
 
   div {
