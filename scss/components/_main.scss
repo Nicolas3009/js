@@ -68,7 +68,28 @@ hr {
     color: white;
   }
 }
+.api{
+  text-align: center;
+  button{
+    padding: 15px;
+    width: 400px;
+    transition: all 1s;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.466);
+      }
 
+    a{
+      list-style: none;
+      text-decoration: none;
+      color: black;
+      transition: all 0.3s;
+      &:hover{
+        color: white;
+      }
+      
+    }
+  }
+}
 .sectionInstagram {
   h3 {
     text-align: center;
@@ -189,66 +210,82 @@ hr {
 }
 
 .carrito {
-
-
-  div {
+  box-shadow:0px 0px 3px black;
+  h2{
+  text-align: center;
+  padding: 20px;
    
-    padding: 20px;
-
-    div {
-      p {
-        color: white;
-      }
-    }
-
-    div {
-      p {
-        color: white;
-      }
-    }
-
-    div {
-      p {
-        color: white;
-      }
-    }
   }
 
-  .divContenedor{
+  div {
+    padding: 20px;
+   
+    div {
+      
+      p {
+        padding: 7px;
+        color: rgb(1, 43, 46);
+        background-color: rgba(255, 255, 255, 0.63);
+        border-radius: 15px;
+      }
+    }
+
+  
+  }
+
+  .divContenedor {
     display: block;
     width: 100%;
     div {
+     
+      margin: 10px;
       display: flex;
       justify-content: space-evenly;
-      padding: 20px;
-width: 100%;
+      padding: 5px;
+      width: 100%;
+      color: rgb(1, 43, 46);
+      background-color: rgb(255, 255, 255);
+      border-radius: 25px;
       div {
         align-items: center;
-        
         img {
-          width: 80px;
-          height: 80px;
+          width: 90px;
+          height: 90px;
+          margin: 10px;
         }
+       
 
       }
 
     }
 
-      div {
+    div {
 
-        p {
-          color: white;
-          font-size: 25px;
-        }
+      p {
+        
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.63);
+        background-color: rgb(1, 43, 46);
       }
-      div{
-        button{
-          width: 40px;
-          height: 40px;
-        }
-      }
+    }
 
-    
+    div {
+      button {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.63);
+        background-color: rgb(1, 43, 46);
+        border-radius: 15px;
+        transition: all 1s;
+      &:hover{
+        color: rgb(1, 43, 46);
+        background-color: rgba(255, 255, 255, 0.63);
+      }
+      }
+    }
+
+
   }
 
   div {
@@ -257,35 +294,28 @@ width: 100%;
     padding: 20px;
 
     p {
-      color: white;
+      color: rgb(1, 43, 46);
+      background-color: rgba(255, 255, 255, 0.692);
+      border-radius: 15px;
+      padding: 7px;
       font-size: 25px;
     }
-
-  }
-}
-
-//.........regalos empresariales ..............
-
-.recordatorio {
-  div {
-    margin: 15px;
-    background-color: rgb(1, 43, 46);
-
-    h2 {
-      text-align: center;
+    button{
+      color: rgb(1, 43, 46);
+      background-color: rgba(255, 255, 255, 0.692);
+      border-radius: 15px;
       padding: 5px;
-      color: white;
+      font-size: 25px;
+      transition: all 1s;
+      &:hover{
+        color: white;
+        background-color: rgb(24, 226, 17);
+      }
     }
 
-    p {
-      text-align: center;
-      padding: 10px;
-      color: white;
-      font-family: "Open Sans", sans-serif;
-
-    }
   }
 }
+
 
 //.......main.contactos...........
 .sectionformulario {
@@ -333,6 +363,31 @@ width: 100%;
         &:hover {
           background-color: white;
         }
+      }
+    }
+  }
+}
+
+
+//apis y fetch............
+h1{
+  text-align: center;
+  padding: 20px;
+}
+.sectionApi{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  h1{
+    text-align: center;
+  }
+  div{
+    padding: 5px;
+    box-shadow:0px 0px 3px black;
+    div{
+      display: flex;
+      img{
+        width: 100%;
       }
     }
   }

@@ -28,6 +28,7 @@
   margin-right: 0;
 }
 .header div div a img {
+  position: fixed;
   margin-right: 0;
   width: 40px;
   height: 40px;
@@ -37,10 +38,8 @@
   width: 45px;
   height: 45px;
 }
-.header div div p {
-  margin-left: 0;
-}
 .header div nav {
+  width: 100%;
   margin: 3px;
   display: flex;
   justify-content: space-between;
@@ -218,6 +217,27 @@ hr {
   color: white;
 }
 
+.api {
+  text-align: center;
+}
+.api button {
+  padding: 15px;
+  width: 400px;
+  transition: all 1s;
+}
+.api button:hover {
+  background-color: rgba(0, 0, 0, 0.466);
+}
+.api button a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+}
+.api button a:hover {
+  color: white;
+}
+
 .sectionInstagram h3 {
   text-align: center;
   padding: 50px;
@@ -305,42 +325,61 @@ hr {
   background-color: black;
 }
 
+.carrito {
+  box-shadow: 0px 0px 3px black;
+}
+.carrito h2 {
+  text-align: center;
+  padding: 20px;
+}
 .carrito div {
   padding: 20px;
 }
 .carrito div div p {
-  color: white;
-}
-.carrito div div p {
-  color: white;
-}
-.carrito div div p {
-  color: white;
+  padding: 7px;
+  color: rgb(1, 43, 46);
+  background-color: rgba(255, 255, 255, 0.63);
+  border-radius: 15px;
 }
 .carrito .divContenedor {
   display: block;
   width: 100%;
 }
 .carrito .divContenedor div {
+  margin: 10px;
   display: flex;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 5px;
   width: 100%;
+  color: rgb(1, 43, 46);
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
 }
 .carrito .divContenedor div div {
   align-items: center;
 }
 .carrito .divContenedor div div img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
 }
 .carrito .divContenedor div p {
-  color: white;
   font-size: 25px;
+  color: rgba(255, 255, 255, 0.63);
+  background-color: rgb(1, 43, 46);
 }
 .carrito .divContenedor div button {
   width: 40px;
   height: 40px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.63);
+  background-color: rgb(1, 43, 46);
+  border-radius: 15px;
+  transition: all 1s;
+}
+.carrito .divContenedor div button:hover {
+  color: rgb(1, 43, 46);
+  background-color: rgba(255, 255, 255, 0.63);
 }
 .carrito div {
   display: flex;
@@ -348,24 +387,23 @@ hr {
   padding: 20px;
 }
 .carrito div p {
-  color: white;
+  color: rgb(1, 43, 46);
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 15px;
+  padding: 7px;
   font-size: 25px;
 }
-
-.recordatorio div {
-  margin: 15px;
-  background-color: rgb(1, 43, 46);
-}
-.recordatorio div h2 {
-  text-align: center;
+.carrito div button {
+  color: rgb(1, 43, 46);
+  background-color: rgba(255, 255, 255, 0.692);
+  border-radius: 15px;
   padding: 5px;
-  color: white;
+  font-size: 25px;
+  transition: all 1s;
 }
-.recordatorio div p {
-  text-align: center;
-  padding: 10px;
+.carrito div button:hover {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  background-color: rgb(24, 226, 17);
 }
 
 .sectionformulario {
@@ -408,6 +446,30 @@ hr {
 }
 .sectionformulario form div button:hover {
   background-color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.sectionApi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+.sectionApi h1 {
+  text-align: center;
+}
+.sectionApi div {
+  padding: 5px;
+  box-shadow: 0px 0px 3px black;
+}
+.sectionApi div div {
+  display: flex;
+}
+.sectionApi div div img {
+  width: 100%;
 }
 
 * {
