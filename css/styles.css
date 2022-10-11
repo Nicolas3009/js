@@ -85,10 +85,10 @@
   display: flex;
   flex-direction: column;
 }
-.footer div img {
-  margin-left: 0;
-  height: 30%;
-  width: 30%;
+.footer div div p {
+  font-size: 1.4em;
+  color: white;
+  letter-spacing: 10px;
 }
 .footer div p {
   font-size: 100%;
@@ -406,46 +406,33 @@ hr {
   background-color: rgb(24, 226, 17);
 }
 
-.sectionformulario {
+.sectioneNosotros div {
   margin: 20px;
-  background-color: white;
-  background-position: 50% 50%;
-  width: 25%;
-}
-.sectionformulario div {
-  width: 100%;
-  height: 50%;
-  background-color: #d6037e;
-  background-position: 50% 50%;
-}
-.sectionformulario div img {
-  width: 20%;
-  height: 20%;
+  margin-left: 115px;
   padding: 10px;
-  margin-left: 40%;
+  text-align: center;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.445);
 }
-.sectionformulario form {
-  width: 100%;
+.sectioneNosotros div p {
+  font-size: 40px;
+  color: white;
 }
-.sectionformulario form div {
-  width: 96%;
-  height: 30%;
-  background-color: white;
-  display: block;
-  margin: 5px;
+
+.sectionContactos div {
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-.sectionformulario form div input {
-  width: 100%;
+.sectionContactos div h2 {
+  text-align: center;
+  padding: 50px;
+  color: black;
 }
-.sectionformulario form div button {
-  width: 100%;
-  height: 30%;
-  padding: 5px;
-  background-color: #d6037e;
-  transition: all 1s;
-}
-.sectionformulario form div button:hover {
-  background-color: white;
+.sectionContactos div p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.562);
 }
 
 h1 {

@@ -68,28 +68,33 @@ hr {
     color: white;
   }
 }
-.api{
+
+.api {
   text-align: center;
-  button{
+
+  button {
     padding: 15px;
     width: 400px;
     transition: all 1s;
-      &:hover{
-        background-color: rgba(0, 0, 0, 0.466);
-      }
 
-    a{
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.466);
+    }
+
+    a {
       list-style: none;
       text-decoration: none;
       color: black;
       transition: all 0.3s;
-      &:hover{
+
+      &:hover {
         color: white;
       }
-      
+
     }
   }
 }
+
 .sectionInstagram {
   h3 {
     text-align: center;
@@ -210,18 +215,19 @@ hr {
 }
 
 .carrito {
-  box-shadow:0px 0px 3px black;
-  h2{
-  text-align: center;
-  padding: 20px;
-   
+  box-shadow: 0px 0px 3px black;
+
+  h2 {
+    text-align: center;
+    padding: 20px;
+
   }
 
   div {
     padding: 20px;
-   
+
     div {
-      
+
       p {
         padding: 7px;
         color: rgb(1, 43, 46);
@@ -230,14 +236,15 @@ hr {
       }
     }
 
-  
+
   }
 
   .divContenedor {
     display: block;
     width: 100%;
+
     div {
-     
+
       margin: 10px;
       display: flex;
       justify-content: space-evenly;
@@ -246,14 +253,16 @@ hr {
       color: rgb(1, 43, 46);
       background-color: rgb(255, 255, 255);
       border-radius: 25px;
+
       div {
         align-items: center;
+
         img {
           width: 90px;
           height: 90px;
           margin: 10px;
         }
-       
+
 
       }
 
@@ -262,7 +271,7 @@ hr {
     div {
 
       p {
-        
+
         font-size: 25px;
         color: rgba(255, 255, 255, 0.63);
         background-color: rgb(1, 43, 46);
@@ -278,10 +287,11 @@ hr {
         background-color: rgb(1, 43, 46);
         border-radius: 15px;
         transition: all 1s;
-      &:hover{
-        color: rgb(1, 43, 46);
-        background-color: rgba(255, 255, 255, 0.63);
-      }
+
+        &:hover {
+          color: rgb(1, 43, 46);
+          background-color: rgba(255, 255, 255, 0.63);
+        }
       }
     }
 
@@ -300,14 +310,16 @@ hr {
       padding: 7px;
       font-size: 25px;
     }
-    button{
+
+    button {
       color: rgb(1, 43, 46);
       background-color: rgba(255, 255, 255, 0.692);
       border-radius: 15px;
       padding: 5px;
       font-size: 25px;
       transition: all 1s;
-      &:hover{
+
+      &:hover {
         color: white;
         background-color: rgb(24, 226, 17);
       }
@@ -316,77 +328,69 @@ hr {
   }
 }
 
+//.......main.nosotros...........
 
-//.......main.contactos...........
-.sectionformulario {
-  margin: 20px;
-  background-color: white;
-  background-position: 50% 50%;
-  width: 25%;
+.sectioneNosotros {
 
   div {
-    width: 100%;
-    height: 50%;
-    background-color: #d6037e;
-    background-position: 50% 50%;
+    margin: 20px;
+    margin-left: 115px;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.445);
 
-    img {
-      width: 20%;
-      height: 20%;
-      padding: 10px;
-      margin-left: 40%;
-    }
-  }
-
-  form {
-    width: 100%;
-
-    div {
-
-      width: 96%;
-      height: 30%;
-      background-color: white;
-      display: block;
-      margin: 5px;
-
-      input {
-        width: 100%;
-      }
-
-      button {
-        width: 100%;
-        height: 30%;
-        padding: 5px;
-        background-color: #d6037e;
-        transition: all 1s;
-
-        &:hover {
-          background-color: white;
-        }
-      }
+    p {
+      font-size: 40px;
+      color: white;
     }
   }
 }
 
+//.......main.contactos...........
+
+.sectionContactos{
+  div{
+    
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    h2{
+      text-align: center;
+      padding: 50px;
+      color: black;
+    }
+    p{
+      text-align: center;
+      color: rgba(0, 0, 0, 0.562);
+    }
+  }
+}
 
 //apis y fetch............
-h1{
+h1 {
   text-align: center;
   padding: 20px;
 }
-.sectionApi{
+
+.sectionApi {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 18px;
-  h1{
+
+  h1 {
     text-align: center;
   }
-  div{
+
+  div {
     padding: 5px;
-    box-shadow:0px 0px 3px black;
-    div{
+    box-shadow: 0px 0px 3px black;
+
+    div {
       display: flex;
-      img{
+
+      img {
         width: 100%;
       }
     }

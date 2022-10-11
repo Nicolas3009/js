@@ -13,13 +13,17 @@
 
     div {
         width: 100%;
-       display: flex;
+        display: flex;
         flex-direction: column;
 
-        img {
-            margin-left: 0;
-            height: 30%;
-            width: 30%
+        div {
+
+
+            p {
+                font-size: 1.4em;
+                color: white;
+                letter-spacing: 10px;
+            }
         }
 
         p {
@@ -41,8 +45,10 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+
         a {
             align-items: center;
+
             img {
                 padding: 10px;
                 height: 25%;
@@ -51,40 +57,7 @@
 
                 &:hover {
                     height: 30%;
-                width: 30%;                }
-            }
-        }
-    }
-
-
-
-    div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-       
-        h3 {
-            color: white;
-            font-family: "Open Sans", sans-serif;
-        }
-
-        ul {
-            list-style: none;
-            li {
-                
-                margin: 20px;
-                
-                a {
-                    font-family: "Open Sans", sans-serif;
-                    font-size: 15px;
-                    text-decoration: none;
-                    color: white;
-                    transition: all 1s;
-
-                    &:hover {
-                        color: darkgoldenrod;
-                    }
-                    
+                    width: 30%;
                 }
             }
         }
@@ -96,19 +69,56 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        
+
         h3 {
-            text-align: left;
-    
+            color: white;
+            font-family: "Open Sans", sans-serif;
         }
 
-        h4 {text-align: left;
+        ul {
+            list-style: none;
+
+            li {
+
+                margin: 20px;
+
+                a {
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: white;
+                    transition: all 1s;
+
+                    &:hover {
+                        color: darkgoldenrod;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            text-align: left;
+
+        }
+
+        h4 {
+            text-align: left;
             color: white;
             font-family: "Open Sans", sans-serif;
         }
 
         a {
-           text-decoration: none;
+            text-decoration: none;
+
             p {
                 font-family: "Open Sans", sans-serif;
                 font-size: 15px;
@@ -123,8 +133,3 @@
         }
     }
 }
-
-
-
-
-
