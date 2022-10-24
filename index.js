@@ -65,23 +65,34 @@ function clickYAñadir(event) {
   agregarElProductoAlCarrito(titulo, precio, imagen);
 }
 
-function agregarElProductoAlCarrito(titulo, precio, imagen) {
+function agregarElProductoAlCarrito(titulo, precio, imagen, cantidad) {
+
+  const elementoTitulo = divContenedor.getElementsByClassName('titulo');
+  for (let i = 0; i < elementoTitulo.length; i++) {
+    if (elementoTitulo[i].innerText === titulo) {
+      const cantidadDeElementos = elementoTitulo[i].parentElement.parentElement.parentElement.querySelector('.cantidadDeLosProductos');
+      cantidadDeElementos.value++;
+      actulizarPrecioTotal();
+      return;
+    }
+  }
+
   const filaDelCarrito = document.createElement(`div`);
-  const carrito = `
+  const carrito =
+
+    `
   <div class="divDeProductos">
   <div>
     <img src=${imagen} alt="">
-    <h6>${titulo}</h6>
+    <h6 class="titulo">${titulo}</h6>
   </div>
   <div >
-
-    <p class="precio">${precio}</p>
+    <p class="precio">${precio} </p>
   </div>
   <div>
-
-    <button id="1" class=" cantidadDeLosProductos"></button>
     
-   
+    <input class="cantidadDeLosProductos" type="number" placeholder="cantidad" value="1">
+    
   </div>
   <div>
     <button class="eliminarProducto">X</button>
@@ -98,8 +109,12 @@ function agregarElProductoAlCarrito(titulo, precio, imagen) {
     .querySelector('.cantidadDeLosProductos')
     .addEventListener("click", aumentarLaCantidadDeLosElementos);
 
+
+
   actulizarPrecioTotal();
 }
+
+
 
 //...Actualiza el precio total..........
 function actulizarPrecioTotal() {
@@ -115,12 +130,13 @@ function actulizarPrecioTotal() {
     const precioSolo = Number(precio.textContent.replace('$', ''));
     //...obtengo la cantidad de un producto......
     const cantidadDeLosProductos = divDeProductos.querySelector('.cantidadDeLosProductos')
-    const valorExactoDeLosProductos = Number(cantidadDeLosProductos.id);
+    const valorExactoDeLosProductos = Number(cantidadDeLosProductos.value);
 
     total = total + precioSolo * valorExactoDeLosProductos;
   });
 
   totalDelCarrito.innerHTML = `TOTAL: $${total}`
+  console.log(actulizarPrecioTotal, "hola")
 }
 
 function borarItemDelCarrito(event) {
@@ -130,18 +146,15 @@ function borarItemDelCarrito(event) {
 }
 
 //...funcion para incrementar el producto desde el carrito con un contador
-let contador = 1;
+
 function aumentarLaCantidadDeLosElementos(event) {
   const modificar = event.target;
-  if (modificar.value <= 0) {
-    modificar.value = 1;
-  }
-  actulizarPrecioTotal();
-  contador += 1;
-  let pContador = document.querySelector(".cantidadDeLosProductos")
-  pContador.innerHTML = contador;
   console.log(modificar);
+  modificar.value <= 0 ? (modificar.value = 1) : null
+  actulizarPrecioTotal();
 }
+
+console.log(actualizarPrecioTotal, 'hola');
 
 
 
